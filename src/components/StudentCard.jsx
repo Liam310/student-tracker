@@ -3,7 +3,7 @@ import '../App.css';
 import Toggle from './Toggle';
 import ExtraStudentInfo from './ExtraStudentInfo';
 
-const StudentCard = ({ id, name, startingCohort, currentBlock }) => {
+const StudentCard = ({ _id, name, startingCohort, currentBlock }) => {
   return (
     <div className="student-card">
       <p>
@@ -18,7 +18,7 @@ const StudentCard = ({ id, name, startingCohort, currentBlock }) => {
         <strong> Current block:</strong> {currentBlock}
       </p>
       <Toggle>
-        <ExtraStudentInfo />
+        <ExtraStudentInfo id={_id} />
       </Toggle>
     </div>
   );
