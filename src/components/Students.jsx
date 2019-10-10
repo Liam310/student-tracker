@@ -3,7 +3,7 @@ import StudentCard from './StudentCard';
 
 const Students = ({ students }) => {
   return (
-    <div>
+    <div className="students-list">
       {students.map(student => {
         return <StudentCard {...student} key={student._id} />;
       })}

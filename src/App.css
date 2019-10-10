@@ -26,13 +26,20 @@
 .student-card {
   border: 1px solid black;
   border-radius: 7px;
-  margin: 25px;
-  background-color: rgba(250, 16, 16, 0.342);
-  cursor: pointer;
+  margin: 5px;
+  background-color: #ba1f31;
+  color: #ffffff;
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* padding-left: 40px; */
+  transition: transform 0.1s;
 }
 
 .student-card:hover {
-  transform: scale(1.03);
+  transform: scale(1.02);
 }
 
 h1 {
@@ -40,5 +47,39 @@ h1 {
 }
 
 header {
-  padding: 15px;
+  z-index: 1;
+  /* padding: 50px; */
+  padding-top: 50px;
+  padding-bottom: 40px;
+  background-color: #202829;
+  color: #ffffff;
+  position: fixed;
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.students-list {
+  padding-top: 176px;
+  /* position: relative; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+a {
+  color: #cdcdcd;
+}
+
+button {
+  border-radius: 100px;
+  border: 3px outset #202829;
+  margin-bottom: 5px;
+}
+
+#logo {
+  margin-top: 180px;
+  width: 80%;
+  height: auto;
 }

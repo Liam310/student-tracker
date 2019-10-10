@@ -1,8 +1,9 @@
 import React from 'react';
 import '../App.css';
 import Toggle from './Toggle';
+import ExtraStudentInfo from './ExtraStudentInfo';
 
-const StudentCard = ({ name, startingCohort, currentBlock }) => {
+const StudentCard = ({ id, name, startingCohort, currentBlock }) => {
   return (
     <div className="student-card">
       <p>
@@ -16,7 +17,9 @@ const StudentCard = ({ name, startingCohort, currentBlock }) => {
         {' '}
         <strong> Current block:</strong> {currentBlock}
       </p>
-      <Toggle>YEEEEET</Toggle>
+      <Toggle>
+        <ExtraStudentInfo />
+      </Toggle>
     </div>
   );
 };

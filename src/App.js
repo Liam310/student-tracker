@@ -19,7 +19,7 @@ class App extends React.Component {
           <Header />
           <Navigation />
         </header>
-        <Router>
+        <Router primary={false}>
           <Home path="/" />
           <Students path="/students" students={students} />
         </Router>
