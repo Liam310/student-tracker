@@ -32,7 +32,7 @@
 }
 
 .student-card:hover {
-  transform: rotate(180deg);
+  transform: scale(1.03);
 }
 
 h1 {

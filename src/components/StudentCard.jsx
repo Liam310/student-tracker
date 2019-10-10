@@ -1,5 +1,6 @@
 import React from 'react';
 import '../App.css';
+import Toggle from './Toggle';
 
 const StudentCard = ({ name, startingCohort, currentBlock }) => {
   return (
@@ -15,6 +16,7 @@ const StudentCard = ({ name, startingCohort, currentBlock }) => {
         {' '}
         <strong> Current block:</strong> {currentBlock}
       </p>
+      <Toggle>YEEEEET</Toggle>
     </div>
   );
 };
