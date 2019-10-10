@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  /* background-color: black; */
+  /* color: white; */
 }
 
 .App-logo {
@@ -19,4 +21,24 @@
 
 .App-link {
   color: #09d3ac;
+}
+
+.student-card {
+  border: 1px solid black;
+  border-radius: 7px;
+  margin: 25px;
+  background-color: rgba(250, 16, 16, 0.342);
+  cursor: pointer;
+}
+
+.student-card:hover {
+  transform: rotate(180deg);
+}
+
+h1 {
+  margin-top: 0;
+}
+
+header {
+  padding: 15px;
 }
